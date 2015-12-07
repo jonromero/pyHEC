@@ -1,0 +1,22 @@
+I couldn't find an official and simple Python SDK for sending data to Splunk's HTTP Event Collector (HEC), so this is it. One simple file, two lines of code.
+
+Feel free to fork and play around.
+
+Use it:
+
+    > virtualenv /tmp/hec
+    > source /tmp/hec/bin/activate
+    > pip install -r requirements.txt
+    
+    from pyHEC import PyHEC
+    hec = PyHEC("709FB206-F12B-4017-BACF-DC6DD0FD0DCB", "http://localhost")
+    
+    event = {"action":"success","message":"individual hello world","event_id":1}
+    metadata = {"index":"default", "host":"jonromero"}
+    print hec.send(event, metadata)
+
+
+
+This is not an official Splunk release.
+
+Ping me @jonromero if you need anything.
