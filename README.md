@@ -1,4 +1,4 @@
-I couldn't find an official and simple Python SDK for sending data to Splunk's HTTP Event Collector (HEC), so this is it. One simple file, two lines of code.
+I couldn't find an official and simple Python SDK for sending data to [Splunk's](http://splunk.com) HTTP Event Collector (HEC), so this is it. One simple file, two lines of code.
 
 Feel free to fork and play around.
 
