@@ -9,7 +9,8 @@ Install it:
     > pip install -r requirements.txt
 
 Use it:
-    # initialize the library    
+    
+    # import pyHEC
     from pyHEC import PyHEC
 
     # use your token (read how to get it here: http://blogs.splunk.com/2015/09/22/turbo-charging-modular-inputs-with-the-hec-http-event-collector-input/)
